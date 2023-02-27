@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+/*GENERAL SETTINGS*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family:'Inria Serif';
+  min-height: 100%;
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+header, main, footer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+button  {
+  margin: 1% 0;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #03a8bb;
+  border: 0;
+  border-radius: 10px;
+}
+
+button a {
+  text-decoration: none;
+  color: white
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5 ease-in;
+}
+
+/*Text settings*/
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+h4, p {
+  font-size: 1.25rem;
+  margin: 0.5rem
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*Reusable components*/
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0
+}
+
+.card {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 2%;
+  max-width: 400px;
+  width: 100%
+}
+
+/*Logo*/
+header img {
+  margin: auto
+}
+
+/*HERO SECTION*/
+.hero {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero aside {
+  max-width: 400px;
+  display: flex;
+}
+
+.hero__right {
+  flex-direction: column;
+  padding: 1rem
+}
+
+.hero__right p {
+  text-align: right;
+  font-size: 2rem;
+}
+
+/*Animation heading*/
+h1 span {
+  display: inline-block;
+  
+}
+h1 span:nth-child(1) {
+  animation-delay: 2s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 2.1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 2.2s
+}
+h1 span:nth-child(4) {
+  animation-delay: 2.3s
+}
+h1 span:nth-child(5) {
+  animation-delay: 2.4s
+}
+h1 span:nth-child(6) {
+  animation-delay: 2.5s
+}
+h1 span:nth-child(7) {
+  animation-delay: 2.6s
+}
+h1 span:nth-child(8) {
+  animation-delay: 2.7s
+}
+h1 span:nth-child(9) {
+  animation-delay: 2.8s
+}
+h1 span:nth-child(10) {
+  animation-delay: 2.8s
+}
+h1 span:nth-child(11) {
+  animation-delay: 2.9s
+}
+h1 span:nth-child(12) {
+  animation-delay: 3s
+}
+h1 span:nth-child(13) {
+  animation-delay: 3.1s;
+}
+h1 span:nth-child(14) {
+  animation-delay: 3.2s
+}
+h1 span:nth-child(15) {
+  animation-delay: 3.3s
+}
+h1 span:nth-child(16) {
+  animation-delay: 3.4s
+}
+
+.hero__left {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: right;
+}
+
+/*Cards animation and placement*/
+.hero__left__content {
+  transform: scale(0);
+  animation: popin 1s ease forwards;
+}
+
+.hero__left__content:nth-of-type(2) {
+  text-align: left;
+  animation-delay: 1s;
+}
+.hero__left__content:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.hero__left__content:nth-of-type(1) button, 
+.hero__left__content:nth-of-type(3) button {
+  margin-left: auto;
+}
+
+/*STUFF SECTION*/
+.main {
+  align-items: center;
+
+}
+
+.links {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center
+}
+
+.links .card {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+
+.main__stuff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%
+}
+
+.main__stuff article {
+  display: none;
+  opacity: 0;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: transparent;
+  backdrop-filter:blur(3px);
+  padding: 2rem;
+  animation-name: moveUp;
+  animation: .5s ease-in-out forwards;
+}
+
+.main__stuff .close {
+  position: absolute;
+  background-color: aliceblue;
+  font-weight: 900;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  padding: .5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+  color: black
+}
+
+.main__card {
+  margin: 2%;
+  padding: 1%;
+  
+}
+
+
+/*KEYFRAMES*/
+@keyframes popin {
+  0% {
+    transform: scale(0)
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: .75
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    
+  }
+
+  100% { 
+    transform: translateY(-550px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-550px);
+    opacity: 1;
+  }
+
+  100% { 
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 3.5rem;
+  }  
+}
+
+@media screen and (min-width: 800px) {
+  h1 span {
+    animation: wave 0.3s linear;
+  }
+
+   img {
+    width: unset
+  }
+  
+  .hero__left {
+    order: 1;
+    margin: 0 2rem;
+  }  
+
+  .hero__left__content {
+    transform: scale(1);
+    animation: none;
+  }
+
+ .hero__right {
+    order: 2;
+    margin: 0 2rem;
+    padding: 0;
+    align-items: flex-end;
+  }
+}
+
+
+
+
+
+
+
+/* 
+.main__skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+.skill-btn {
+  width: unset;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-weight: 700;
+  background-color: #86E9FF;
+  color: #000000;
+  filter: drop-shadow(2px 2px 10px #000000);
+}
+
+
+.skills__cloud {
+  background-color: white;
+  margin-left: -4rem;
+  margin-right: -4rem;
+  margin-top: -2rem;
+  padding: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
