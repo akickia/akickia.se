@@ -22,7 +22,8 @@ header, main, .footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: auto
+  margin: auto;
+  position: relative;
 }
 
 main {
@@ -31,7 +32,6 @@ main {
 
 img {
   max-width: 100%;
-  width: 100%;
 }
 
 button  {
@@ -120,7 +120,7 @@ article {
 
 .overlay {
   position: absolute;
-  top: 100vh;
+  margin-top: 45rem;
   max-width: 1500px;
   width: 80%;
   z-index: 50;
@@ -226,6 +226,10 @@ h1 span:nth-child(16) {
   flex-wrap: wrap;
   justify-content: center;
   text-align: right;
+}
+
+.hero__left__content {
+  position: relative;
 }
 
 /*Cards animation and placement*/
@@ -493,21 +497,15 @@ justify-content: space-around;
 /*MEDIA QUERIES*/
 @media screen and (max-width: 380px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }  
 }
 
-.overlay {
-  top: 10vh
-}
+
 
 @media screen and (min-width: 800px) {
   h1 span {
     animation: wave 0.3s linear;
-  }
-
-   img {
-    width: unset
   }
   
   .hero__left {
@@ -526,6 +524,10 @@ justify-content: space-around;
     margin: 0 2rem;
     padding: 0;
     align-items: flex-end;
+  }
+
+  .overlay {
+    margin-top: 5rem;
   }
 
   .main__stuff article {
