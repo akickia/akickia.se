@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the portfolio of frontend developer Kicki Lindstrand">
-    <meta property="og:description" content="Welcome to the portfolio of frontend developer Kicki Lindstrand">
-    <meta property="twitter:description" content="Welcome to the portfolio of frontend developer Kicki Lindstrand">
+    <meta name="description" content="Portfolio of frontend developer Kicki Lindstrand">
+    <meta property="og:description" content="Portfolio of frontend developer Kicki Lindstrand">
+    <meta property="twitter:description" content="Portfolio of frontend developer Kicki Lindstrand">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
   <title>akickia</title>
 </head>
 <body>
@@ -27,7 +26,7 @@
         <p>Frontendutvecklare</p>
       </aside>
       <aside class="hero__left">
-        <section class="hero__left__content card">
+        <section class="hero__left__content card highlight">
           <h3>AKTUELLT:</h3>
           <h4>Söker LIA</h4>
           <p>Period 1 - vecka 51 2023 + 1-8 2024</p>
@@ -42,8 +41,8 @@
           <p><i>HTML, CSS, JavaScript (fetch, JSON, listor, 
             DOM-manipulation m.m.)</i></p>
           <div class="btns">
-            <button class="btn"><a>Länk till demo</a></button>
-            <button class="btn"><a>Länk till GitHub</a></button>
+            <a href="https://akickia-pop.netlify.app" target="_blank"><button class="btn">Länk till demo</button></a>
+            <a href="https://github.com/akickia/POP-Store.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
           </div>
         </section>
         <section class="hero__left__content card">
@@ -51,7 +50,14 @@
           <h4>Frontendutvecklare</h4>
           <p>Folkuniversitetet Göteborg, Distans</p>
           <p>400yhp, ht2022 - vt2024</p>
-          <button class="btn"><a>Läs mer</a></button>
+          
+          <a target="_blank" 
+          href="https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-utbildningar/it-data/frontendutvecklare-distans/">
+            <button class="btn">Läs mer
+              <br>
+              <small>(Extern länk)</small>
+            </button>
+          </a>
         </section>
       </aside>
     </article>
@@ -59,14 +65,14 @@
     <article class="main">
       <h2>STUFF:</h2>
       <section class="links">
-        <section class="education card" id="education">Utbildning</section>
-        <section class="project card" id="projects">Projekt</section>
-        <section class="experience card" id="experience">Erfarenhet</section>
-        <section class="testimonials card" id="testimonial">Testimonials</section>
-        <section class="testimonials card" id="all">Allt</section>
+        <section class="education card"><a href="#education">Utbildning</a></section>
+        <section class="project card"><a href="#projects">Projekt</a></section>
+        <section class="experience card"><a href="#experience">Erfarenhet</a></section>
+        <section class="testimonials card"><a href="#testimonial">Testimonials</a></section>
       </section>
       <section class="main__stuff">
-        <article class="education">
+
+        <article class="education main__cards" id="education">
         <section class="education__content main__card card">
           <h3>UTBILDNING:</h3>
           <h4>IT:Tech for women</h4>
@@ -86,17 +92,38 @@
             Programmering 1 läste jag parallellt med Tech for women mars - 
             maj 2022 av behörighetsskäl, betyg B. Udemykurserna är pågående. </i></p>
         </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>Lärarprogrammet</h4>
+          <p>Örebro universitet</p>
+          <p>2004-2010</p>
+          <p><i>Lärarutbildning inriktning svenska. 
+            Behörig förskollärare samt lärare i Svenska från förskoleklass - 
+            gymnasie + vuxenutbildning (Svenska och Svenska som andraspråk). </i></p>
+        </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>Lärare och handledning</h4>
+          <p>Mälardalens högskola (numera universitet)</p>
+          <p>2016 samt 2020</p>
+          <p><i>Kurs samt fördjupande kurs i handledning av lärarstudenter inom skola/förskola. 
+            Inkluderade bland annat kommunikation, gruppdynamik och etiska förhållningssätt 
+            i förhållande till makt, genus och etnicitet.  </i></p>
+        </section>
+        <div class="blur">
+          <button class="btn art_btn education">Läs mer</button>
+        </div>
       </article>
-      <article class="projects">
+      <article class="projects main__cards" id="projects">
         <section class="projects__content main__card card">
           <h3>PROJEKT:</h3>
           <h4>Sten Sax Påse</h4>
           <p>Egen idé och utförande</p>
           <p>Januari 2023</p>
-          <p><i>Basic JavaScript, HTML och CSS</i></p>
+          <p><i>JavaScript, HTML och CSS. Eget initiativ som jag kodade på några dagar och blev mycket stolt över.</i></p>
           <div class="btns">
-            <button class="btn"><a>Länk till demo</a></button>
-            <button class="btn"><a>Länk till GitHub</a></button>
+            <a href="https://akickia-sten-sax-pase.netlify.app/" target="_blank"><button class="btn">Länk till demo</button></a>
+            <a href="https://github.com/akickia/StenSaxP-se.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
           </div>
         </section>
         <section class="projects__content main__card card">
@@ -107,8 +134,8 @@
           <p><i>Basic JS (listor, funktioner, DOM-manipulation 
             m.m.)</i></p>
           <div class="btns">
-            <button class="btn"><a>Länk till demo</a></button>
-            <button class="btn"><a>Länk till GitHub</a></button>
+            <a href="https://ruby-rollers.netlify.app/" target="_blank"><button class="btn">Länk till demo</button></a>
+            <a href="https://github.com/akickia/examinationJavaScriot.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
           </div>
         </section>
         <section class="projects__content main__card card">
@@ -119,12 +146,51 @@
           <p><i>HTML, CSS och ett uns JavaScript. 
             Formulär via formsubmit.io</i></p>
           <div class="btns">
-            <button class="btn"><a href="https://veracare.se" target="_blank">Länk till demo</a></button>
-            <button class="btn"><a>Länk till GitHub</a></button>
+            <a href="https://veracare.se" target="_blank"><button class="btn">Länk till hemsida</button></a>
           </div>
         </section>
+        <section class="projects__content main__card card">
+          <h3>PROJEKT:</h3>
+          <h4>Lindstrand.tech</h4>
+          <p>Egen idé och utförande</p>
+          <p>Lanserad September 2022</p>
+          <p><i>HTML och CSS. 
+            Hemsida för min man och mig. Under utveckling, i dagsläget kodad med HTML och CSS.</i></p>
+          <div class="btns">
+            <a href="https://lindstrand.tech" target="_blank"><button class="btn">Länk till hemsida</button></a>
+          </div>
+        </section>
+        <section class="projects__content main__card card">
+          <h3>PROJEKT:</h3>
+          <h4>MathPractice</h4>
+          <p>Egen idé och utförande</p>
+          <p>Maj 2022, uppdaterad December 2022</p>
+          <p><i>JavaScript, HTML och CSS. 
+            Det första projekt i JavaScript jag kodade utifrån egen idé. 
+            Återkom till koden flera gånger för att slutligen få det att fungera hösten 2022.</i></p>
+          <div class="btns">
+            <a href="https://akickia-math-practice.netlify.app" target="_blank"><button class="btn">Länk till demo</button></a>
+            <a href="https://github.com/akickia/MathPractice.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
+          </div>
+        </section>
+        <section class="projects__content main__card card">
+          <h3>PROJEKT:</h3>
+          <h4>Förskolekompetens</h4>
+          <p>Egen idé och utförande</p>
+          <p>April 2022, uppdaterad Maj 2022</p>
+          <p><i>JavaScript, HTML och CSS/Sass. 
+            Eget projekt för att öva främst HTML och CSS men har senare lagt till lite JavaScript. 
+            </i></p>
+          <div class="btns">
+            <a href="https://forskolekompetens.netlify.app" target="_blank"><button class="btn">Länk till demo</button></a>
+            <a href="https://github.com/akickia/fsk-kompetens.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
+          </div>
+        </section>
+        <div class="blur">
+          <button class="btn art_btn projects">Läs mer</button>
+        </div>
       </article>
-      <article class="experience">
+      <article class="experience main__cards" id="experience">
         <section class="experience__content main__card card">
           <h3>ERFARENHET:</h3>
           <h4>Lärarassistent IT-kurser</h4>
@@ -156,9 +222,11 @@
             Manifestationen hade ca 500 deltagare, inklusive dåvarande utbildningsminister 
             som jag överlämnade 25 000 namnunderskrifter till. 
             </i></p>
-        </section>
+        </section><div class="blur">
+          <button class="btn art_btn experience">Läs mer</button>
+        </div>
       </article>
-      <article class="testimonial">
+      <article class="testimonial main__cards" id="testimonial">
         <section class="testimonials__content main__card card">
           <h3>TESTIMONIAL:</h3>
           <h4>Michelle Andersson</h4>
@@ -190,47 +258,73 @@
             Kicki tar det där extra steget för att vara till hjälp för dem omkring henne.
             </i></p>
         </section>
+        <section class="testimonials__content main__card card">
+          <h3>TESTIMONIAL:</h3>
+          <h4>Adam Sjödin</h4>
+          <p>Student Frontendutvecklare YH</p>
+          <p>2022-2024</p>
+          <p><i>Att ha Kicki i sin klass är nog det bästa som kunde hänt en. 
+            Eftersom vi pluggar på distans så har vi inte alltid tillgång till vår lärare. 
+            Då går jag oftast till Kicki när jag behöver hjälp eftersom hon alltid är tillgänglig 
+            och villig att hjälpa till. Hon är väldigt duktig på att programmera, pedagogisk och är 
+            alltid peppande! Hon har även lätt för att sätta sig in i kod som hon inte skrivit själv, 
+            vilket är svårt för många. 
+            Är redan nu avundsjuk på hennes framtida kollegor som ska jobba med henne!
+            </i></p>
+        </section>
+        <section class="testimonials__content main__card card">
+          <h3>TESTIMONIAL:</h3>
+          <h4>Cecilia Ljung</h4>
+          <p>Student Frontendutvecklare YH</p>
+          <p>2022-2024</p>
+          <p><i>Kicki är en fantastisk klasskamrat. 
+            Hon är alltid hjälpsam och har en nyfikenhet som ofta leder till 
+            intressanta diskussioner och lösningar. Kicki är ordningssam och driven, 
+            vilket hon verkligen har visat genom sitt arbete som klassrepresentant. 
+            Jag hoppas och ser fram emot att möta henne ute på kommande arbetsplatser 
+            som en kompetent utvecklare och kollega!
+            </i></p>
+        </section>
+        <div class="blur">
+        <button class="btn art_btn testimonial">Läs mer</button>
+      </div>
       </article>
         
       </section>
-      <section class="main__other">
-
-      </section>
+      <article class="main__quotes">
+        <section class="section__quote card">
+          <h3>INSPIRATIONAL QUOTES: </h3>
+          <div>
+            <h4 id="quote" class="quote"></h4>
+            <p id="author" class="author"></p>
+          </div>
+          <button id="quoteBtn">Generate another quote</button>        
+        </section>
+      </article>
     </article>
   </main>
-  <footer></footer>
+  <footer>
+    <article class="footer">
+      <section class="footer__links">
+        <nav>
+          <h4>Länkar:</h4>
+          <ul>
+            <li><a href="pages/about.html">Mer om Kicki</a></li>
+            <li><a href="#" target="_blank">Äldre version av portfolio</a></li>
+            <li><a href="http://www.lindstrand.tech" target="_blank">Lindstrand.se</a></li>
+            <li><a href="https://github.com/akickia/" target="_blank">Github</a></li>
+            <li><a href="http://www.linkedin.com/in/kicki-lindstrand" target="_blank">Linkedin</a></li>
+            <li><a href="mailto:kicki.lindstrand@gmail.com">Maila mig</a></li>
+          </ul>
+        </nav>
+      </section>
+    </article>
+    <article>
+      <small>all rights reserved akickia 2023</small>
+    </article>
+  </footer>
 
   
-  <!-- <section class="main__skills">
-    <div class="skills__cloud">
-      <button class="skill-btn">HTML & CSS</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">JavaScript</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">React</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Cloud</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Samarbete</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Kommunikation</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Agilt arbete</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Pedagogik</button>
-    </div>
-    <div class="skills__cloud">
-      <button class="skill-btn">Ledarskap</button>
-    </div>
-
-  </section> -->
   <script src="script/script.js"></script>
 </body>
 </html>
