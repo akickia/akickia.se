@@ -80,7 +80,8 @@ button:hover {
 
 hr {
   max-width: 1000px;
-  width: 100%
+  width: 100%;
+  margin: 2rem
 }
 
 /*Text settings*/
@@ -344,7 +345,6 @@ button:active, .links .card:active {
   margin: 2%;
   padding: 2% 2%;
   min-width: 250px;
-  transition: all .5s linear
 }
 
 .projects .main__card {
