@@ -1,5 +1,8 @@
 openOverlay()
+generateQuote()
+openMore()
 
+//Function to open and generate overlay
 function openOverlay() {
   let btnOverlay = document.querySelector(".highlight button")
   let heroSection = document.querySelector("header")
@@ -29,15 +32,13 @@ function openOverlay() {
         <a href="files/Kicki Lindstrand CV.pdf">
           <button>Ladda ner CV</button>
         </a>
-      </div>
-      `
+      </div>`
       heroSection.appendChild(overlaySection)
       createCloseBtn(overlaySection)
   })
-
 }
 
-
+//Generate closebutton
 function createCloseBtn(article) {
   let closeBtn = document.createElement("p")
   closeBtn.classList.add("close")
@@ -49,20 +50,14 @@ function createCloseBtn(article) {
   })
 }
 
-
-const quoteEl = document.getElementById('quote')
-const authorEl = document.getElementById('author')
-const quoteBtn = document.getElementById('quoteBtn')
-
-quoteBtn.addEventListener('click', generateQuote)
-
-generateQuote()
-
-
+//Fetch and display quotes
 async function generateQuote() {
-    let n = Math.floor(Math.random() * 160)
-    let data = await fetch('https://type.fit/api/quotes')
-    data = await data.json()
+  const quoteEl = document.getElementById('quote')
+  const authorEl = document.getElementById('author')
+  const quoteBtn = document.getElementById('quoteBtn')
+  let n = Math.floor(Math.random() * 160)
+  let data = await fetch('https://type.fit/api/quotes')
+  data = await data.json()
      {
       quoteEl.innerHTML = data[n].text
 
@@ -73,8 +68,10 @@ async function generateQuote() {
         authorEl.innerHTML = '// '+data[n].author
       }
     }
+  quoteBtn.addEventListener('click', generateQuote)
 }
 
+//Open Read more sections
 function openMore() {
     let articles = document.querySelectorAll(".main__cards")
     articles.forEach(element => {
@@ -92,23 +89,3 @@ function openMore() {
   })
 }
 
-
-
-  
-//   articles.forEach(article => {
-//     let idOfArticle = article.target.id
-//     console.log(idOfArticle)
-//     let moreBtn = article.querySelector(".art_btn")
-//     moreBtn.addEventListener("click", (e) => {
-//       let classOfButton = e.target.classList     
-//       console.log(classOfButton[2])
-//       if (classOfButton == article.id) {
-//         article.classList.toggle(".open")
-//         moreBtn.style.display = "none"
-//       }
-
-//     })
-//   })
-// }
-
-openMore()
