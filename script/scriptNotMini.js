@@ -56,6 +56,7 @@ async function generateQuote() {
   const authorEl = document.getElementById('author')
   const quoteBtn = document.getElementById('quoteBtn')
   let n = Math.floor(Math.random() * 160)
+  try {
   let data = await fetch('https://type.fit/api/quotes')
   data = await data.json()
      {
@@ -69,6 +70,10 @@ async function generateQuote() {
       }
     }
   quoteBtn.addEventListener('click', generateQuote)
+  }
+catch (error) {
+  console.log(error)
+}
 }
 
 //Open Read more sections
