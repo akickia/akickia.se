@@ -257,10 +257,11 @@ h1 span:nth-child(16) {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 500px;
+  text-align: center;
 }
 
-.skills .card i {
+.skills .card div {
   font-size: 3rem;
   padding: 1rem;
   color: #03a8bb
