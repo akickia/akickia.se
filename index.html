@@ -18,7 +18,7 @@
   <header>
     <a href="index.html"><img src="images/akickia.se.png" alt="logo"></a>
   </header>
-  <main>
+  <main class="home">
     <article class="hero">
       <aside class="hero__right">
         <h1><span>K</span><span>i</span><span>c</span><span>k</span><span>i</span><br>
@@ -28,13 +28,48 @@
         <p>Frontendutvecklare</p>
       </aside>
       <aside class="hero__left">
-        <section class="hero__left__content card highlight">
+        <!-- <section class="hero__left__content card highlight">
           <h3>AKTUELLT:</h3>
+          <h4>Sommaruppehåll</h4>
           <h4>Söker LIA</h4>
           <p>Period 1 - vecka 51 2023 + vecka 1-8 2024</p>
           <p>Period 2  vecka 14 - 23 2024</p>
-          <button class="btn"><a>Läs mer</a></button>
+          <button class="btn"><a>Läs mer</a></button> 
+        </section> -->
+        
+        <section class="hero__left__content card">
+          <h3>PÅGÅENDE UTBILDNING:</h3>
+          <h4>Frontendutvecklare</h4>
+          <p>Folkuniversitetet Göteborg, Distans</p>
+          <p>400yhp, ht2022 - vt2024</p>
+          <nav>
+            <ul>
+              <li><button class="open-nav">Visa mer</button></li>
+              <li>
+                <a href="https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-utbildningar/it-data/frontendutvecklare-distans/" target="_blank">
+                  <button>Om utbildningen hos Folkuniversitetet<br>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a href="files/FE22_kursplaner.pdf" download>
+                  <button>Ladda ner kursplaner</button>
+                </a>
+              </li>
+              <li> 
+                <a href="https://frontenders-countdown.netlify.app/" target="_blank">
+                  <button>Se var jag är i utbildningen</button>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/akickia/" target="_blank">
+                  <button>Följ min utveckling på GitHub</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </section>
+
         <section class="hero__left__content card">
           <h3>SENAST UPPLAGDA PROJEKT:</h3>
           <h4>Quotes</h4>
@@ -46,20 +81,7 @@
             <a href="https://github.com/akickia/quotes.git" target="_blank"><button class="btn">Länk till GitHub</button></a>
           </div>
         </section>
-        <section class="hero__left__content card">
-          <h3>PÅGÅENDE UTBILDNING:</h3>
-          <h4>Frontendutvecklare</h4>
-          <p>Folkuniversitetet Göteborg, Distans</p>
-          <p>400yhp, ht2022 - vt2024</p>
-          
-          <a target="_blank" 
-          href="https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-utbildningar/it-data/frontendutvecklare-distans/">
-            <button class="btn">Läs mer
-              <br>
-              <small>(Extern länk)</small>
-            </button>
-          </a>
-        </section>
+       
       </aside>
     </article>
 
@@ -98,6 +120,10 @@
           <p>Figma</p>
         </div>
         <div>
+          <i title="node.js" class="fa-brands fa-node-js"></i>
+          <p>Node.js</p>
+        </div>
+        <div>
           <i title="font awesome" class="fa-brands fa-font-awesome"></i>
           <p>Font awesome</p>
         </div>
@@ -126,49 +152,8 @@
       </section>
       <section class="main__stuff">
 
-        <article class="education main__cards" id="education">
-        <section class="education__content main__card card">
-          <h3>UTBILDNING:</h3>
-          <h4>IT:Tech for women</h4>
-          <p>Sundsgårdens folkhögskola, Distans</p>
-          <p>vt 2022</p>
-          <p><i>Innehåll: HTML, CSS, JavaScript, React, 
-            Agilt abete m.m.</i></p>
-        </section>
-        <section class="education__content main__card card">
-          <h3>UTBILDNING:</h3>
-          <h4>Diverse kurser</h4>
-          <p>Programmering 1 (Hermods), Learn JavaSript (Codecadamy), 
-            Börja koda (Tjejer kodar), 50 projects in 50 days (Udemy), 
-            React Front to Back (Udemy)</p>
-          <p>2021 - 2023</p>
-          <p><i>Diverse kurser online för att öka min kunskap. 
-            Programmering 1 läste jag parallellt med Tech for women mars - 
-            maj 2022 av behörighetsskäl, betyg B. Udemykurserna är pågående. </i></p>
-        </section>
-        <section class="education__content main__card card">
-          <h3>UTBILDNING:</h3>
-          <h4>Lärarprogrammet</h4>
-          <p>Örebro universitet</p>
-          <p>2004-2010</p>
-          <p><i>Lärarutbildning inriktning svenska. 
-            Behörig förskollärare samt lärare i Svenska från förskoleklass - 
-            gymnasie + vuxenutbildning (Svenska och Svenska som andraspråk). </i></p>
-        </section>
-        <section class="education__content main__card card">
-          <h3>UTBILDNING:</h3>
-          <h4>Lärare och handledning</h4>
-          <p>Mälardalens högskola (numera universitet)</p>
-          <p>2017 samt 2020</p>
-          <p><i>Kurs samt fördjupande kurs i handledning av lärarstudenter inom skola/förskola. 
-            Inkluderade bland annat kommunikation, gruppdynamik och etiska förhållningssätt 
-            i förhållande till makt, genus och etnicitet.  </i></p>
-        </section>
-        <div class="blur">
-          <button class="btn art_btn education">Läs mer</button>
-        </div>
-      </article>
-      <hr>
+        <hr>
+        <h4>PROJEKT</h4>
       <article class="projects main__cards" id="projects">
         <section class="projects__content main__card card">
           <h3>SKOLPROJEKT:</h3>
@@ -282,6 +267,60 @@
         </div>
       </article>
       <hr>
+      
+      <h4>UTBILDNINGAR</h4>
+      <article class="education main__cards" id="education">
+        <section class="education__content main__card card">
+          <h3>PÅGÅENDE UTBILDNING:</h3>
+          <h4>Frontendutvecklare</h4>
+          <p>Folkuniversitetet Göteborg, Distans</p>
+          <p>400yhp, ht2022 - vt2024</p>
+          <p><i>Innehåll: HTML, CSS, JavaScript, React, 
+            Node.js, Cloud, Agilt abete, UX/UI m.m.</i></p>
+        </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>IT:Tech for women</h4>
+          <p>Sundsgårdens folkhögskola, Distans</p>
+          <p>vt 2022</p>
+          <p><i>Innehåll: HTML, CSS, JavaScript, React, 
+            Agilt abete m.m.</i></p>
+        </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>Diverse kurser</h4>
+          <p>Programmering 1 (Hermods), Learn JavaSript (Codecadamy), 
+            Börja koda (Tjejer kodar), 50 projects in 50 days (Udemy), 
+            React Front to Back (Udemy)</p>
+          <p>2021 - 2023</p>
+          <p><i>Diverse kurser online för att öka min kunskap. 
+            Programmering 1 läste jag parallellt med Tech for women mars - 
+            maj 2022 av behörighetsskäl, betyg B. Udemykurserna är pågående. </i></p>
+        </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>Lärarprogrammet</h4>
+          <p>Örebro universitet</p>
+          <p>2004-2010</p>
+          <p><i>Lärarutbildning inriktning svenska. 
+            Behörig förskollärare samt lärare i Svenska från förskoleklass - 
+            gymnasie + vuxenutbildning (Svenska och Svenska som andraspråk). </i></p>
+        </section>
+        <section class="education__content main__card card">
+          <h3>UTBILDNING:</h3>
+          <h4>Lärare och handledning</h4>
+          <p>Mälardalens högskola (numera universitet)</p>
+          <p>2017 samt 2020</p>
+          <p><i>Kurs samt fördjupande kurs i handledning av lärarstudenter inom skola/förskola. 
+            Inkluderade bland annat kommunikation, gruppdynamik och etiska förhållningssätt 
+            i förhållande till makt, genus och etnicitet.  </i></p>
+        </section>
+        <div class="blur">
+          <button class="btn art_btn education">Läs mer</button>
+        </div>
+      </article>
+      <hr>
+      <h4>ERFARENHETER</h4>
       <article class="experience main__cards" id="experience">
         <section class="experience__content main__card card">
           <h3>ERFARENHET:</h3>
@@ -319,9 +358,10 @@
         </div>
       </article>
       <hr>
+      <h4>REFERENSER</h4>
       <article class="testimonial main__cards" id="testimonial">
         <section class="testimonials__content main__card card">
-          <h3>TESTIMONIAL:</h3>
+          <h3>REFERENS:</h3>
           <h4>Michelle Andersson</h4>
           <p>Course director Tech for women, Sundsgårdens folkhögskola</p>
           <p>2022</p>
@@ -339,7 +379,7 @@
             </i></p>
         </section>
         <section class="testimonials__content main__card card">
-          <h3>TESTIMONIAL:</h3>
+          <h3>REFERENS:</h3>
           <h4>Kamala Lundin</h4>
           <p>Student Frontendutvecklare YH</p>
           <p>2022-2023</p>
@@ -352,7 +392,7 @@
             </i></p>
         </section>
         <section class="testimonials__content main__card card">
-          <h3>TESTIMONIAL:</h3>
+          <h3>REFERENS:</h3>
           <h4>Adam Sjödin</h4>
           <p>Student Frontendutvecklare YH</p>
           <p>2022-2024</p>
@@ -366,7 +406,7 @@
             </i></p>
         </section>
         <section class="testimonials__content main__card card">
-          <h3>TESTIMONIAL:</h3>
+          <h3>REFERENS:</h3>
           <h4>Cecilia Ljung</h4>
           <p>Student Frontendutvecklare YH</p>
           <p>2022-2024</p>
@@ -384,7 +424,7 @@
       </article>
       <hr>
       </section>
-      <article class="main__quotes">
+      <!-- <article class="main__quotes">
         <section class="section__quote card">
           <h3>INSPIRATIONAL QUOTES: </h3>
           <div>
@@ -393,7 +433,7 @@
           </div>
           <button id="quoteBtn">Generate another quote</button>        
         </section>
-      </article>
+      </article> -->
     </article>
   </main>
   <footer>
@@ -406,6 +446,7 @@
             <li><a href="https://github.com/akickia/" target="_blank">Github</a></li>
               <li><a href="http://www.linkedin.com/in/kicki-lindstrand" target="_blank">Linkedin</a></li>
               <li><a href="mailto:kicki.lindstrand@gmail.com">Maila mig</a></li>
+              <li><a href="https://www.folkuniversitetet.se/" target="_blank">Folkuniversitetet</a></li>
               <li><a href="http://www.lindstrand.tech" target="_blank">Lindstrand.se</a></li>
               <li><a href="https://akickia.netlify.app/" target="_blank">Äldre version av portfolio</a></li>
           </ul>
@@ -419,6 +460,6 @@
   </footer>
 
   
-  <script src="script/script.js"></script>
+  <script src="script/scriptNotMini.js"></script>
 </body>
 </html>

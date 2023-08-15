@@ -119,6 +119,18 @@ p {
   font-size: 1rem;
 }
 
+.home ul {
+  list-style-type: none;
+}
+
+.home ul li:not(:first-child) {
+  display: none;
+}
+
+.home .open ul li {
+  display: list-item;
+}
+
 /*LOGO*/
 header img {
   margin: auto
@@ -328,8 +340,14 @@ h1 span:nth-child(16) {
 
 .btns {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: .5rem;
+}
+
+.btns-edu {
+  background-color: aliceblue;
+  width: unset
 }
 
 .blur {
