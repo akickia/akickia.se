@@ -345,6 +345,10 @@ h1 span:nth-child(16) {
   padding-top: .5rem;
 }
 
+.hero__left .btns {
+  justify-content: space-around;
+}
+
 .btns-edu {
   background-color: aliceblue;
   width: unset
