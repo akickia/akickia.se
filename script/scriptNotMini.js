@@ -51,15 +51,16 @@ function createCloseBtn(article) {
   })
 }
 
-// //Fetch and display quotes
+//Fetch and display quotes
 // async function generateQuote() {
 //   const quoteEl = document.getElementById('quote')
 //   const authorEl = document.getElementById('author')
 //   const quoteBtn = document.getElementById('quoteBtn')
 //   let n = Math.floor(Math.random() * 160)
 //   try {
-//   let data = await fetch('https://type.fit/api/quotes')
-//   data = await data.json()
+//   let data = await fetch('https://gobetween.oklabs.org/https://zenquotes.io/api/random')
+//   data = await data.json();
+//   console.log(data)
 //      {
 //       quoteEl.innerHTML = data[n].text
 

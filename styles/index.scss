@@ -121,6 +121,12 @@ p {
 
 .home ul {
   list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 50;
 }
 
 .home ul li:not(:first-child) {
@@ -248,6 +254,8 @@ h1 span:nth-child(16) {
 .hero__left__content:nth-of-type(2) {
   text-align: left;
 }
+
+
 
 .highlight::before {
   content: url("../images/arrow.svg");
@@ -634,6 +642,12 @@ footer small {
   }
   100% {
     transform: rotateZ(5deg);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+
   }
 }
 
